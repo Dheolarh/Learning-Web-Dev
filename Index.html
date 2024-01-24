@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Notes App</title>
+    <style>
+        .page{
+            background-image: src="";
+
+        }
+        .textspace{
+            background-color: white;
+            width: 40%;
+            border-radius: 7px;
+            border: 0px;
+            height: 100px;
+            box-sizing: border-box;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-left: 10px;
+            vertical-align: top;
+            padding-top: 10px;
+        }
+        h2{
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        button{
+            background-color: white;
+            border-radius: 7px;
+            border: 0px;
+            height: 30px;
+            width: 100px;
+            margin-left: 10px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        
+        }
+        .img{
+            width: 25px;
+            height: 20px;
+            margin-left: 10px;
+            margin-top: 90px;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(to right, purple,white);">
+    <div>
+        <img src="C:\Users\adeju\Downloads\Notes app\notes.png" width="70px"/>
+        <h2>Create your first notes <span><button id="press">Create</button></span></h2>
+    </div>
+    <div id="main">
+
+    </div>
+
+    <script>
+        let creator = document.getElementById("main")
+        let  press = document.getElementById("press")
+        create = (event) => {
+            let text = document.createElement("textarea")
+            let img = document.createElement("img")
+            img.src = "C:\\Users\\adeju\\Downloads\\Notes app\\delete.png"
+            img.className = "img"
+            img.onclick = () => {
+                creator.removeChild(text)
+                creator.removeChild(img)
+            }
+            text.className = "textspace"
+            creator.appendChild(text)
+            creator.appendChild(img)
+        }
+        press.addEventListener("click",create)
+
+    </script>
+    
+</body>
+</html>
