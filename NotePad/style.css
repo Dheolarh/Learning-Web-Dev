@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#head{
+    background-image: linear-gradient(to right, blue, rgb(213, 212, 223));
+}
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+#title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: azure; 
+}
+
+#book{
+    border-left: 1px solid blue;
+    border-right: 1px solid rgb(111, 120, 204);
+    border-bottom: 1px solid rgb(103, 109, 187);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100vh;
+    background-image: linear-gradient(to top, blue, white);
+    overflow: scroll;
+}
+
+button{
+    background-color: azure;
+    border: 1px solid rgb(59, 111, 207);
+    box-shadow: 0px 1px 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+
+button:hover{
+    background-color: azure;
+    border: 1px solid rgb(59, 111, 207);
+    box-shadow: 0px 1px 2px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    box-shadow: 0px 4px 4px rgb(0, 0, 0);
+}
+
+textarea{
+    border-radius: 8px;
+    border: 1px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 300px;
+    background-image: linear-gradient(to top, rgb(62, 20, 250), white);
+    color: black;
+    text-decoration: solid;
+}
+
+textarea:active{
+    border-radius: 8px;
+    border: 1px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 300px;
+    background-image: linear-gradient(to top, rgb(62, 20, 250), white);
+    color: black;
+    text-decoration: solid;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+}
+textarea:hover{
+    border-radius: 8px;
+    border: 1px;
+    padding: 10px;
+    margin: 10px;
+    height: 100px;
+    width: 300px;
+    background-image: linear-gradient(to top, rgb(62, 20, 250), white);
+    color: black;
+    text-decoration: solid;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+}
+
+#delete{
+    width: 20px;
+    margin-bottom: 10px;
+}
